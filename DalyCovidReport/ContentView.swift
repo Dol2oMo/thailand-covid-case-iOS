@@ -9,6 +9,10 @@ import SwiftUI
 import WidgetKit
 
 struct ContentView: View {
+
+    @State var data: CovidEntry = CovidEntry.placeholder
+    let service = CovidService.shared
+
     var body: some View {
 
         GeometryReader { baseView in
@@ -17,7 +21,7 @@ struct ContentView: View {
 
                 ZStack {
                     Color.white.overlay(
-                        ReportViewMedium(data: CovidEntry.placeholder)
+                        DailyReportView(data: data)
                     ).cornerRadius(24)
                 }
                 .padding([.leading,.trailing],25)
@@ -29,7 +33,7 @@ struct ContentView: View {
                 HStack {
                     VStack {
                         Color.white.overlay(
-                            OtherDataView(data: CovidEntry.placeholder)
+                            OtherDataView(data: data)
                         ).cornerRadius(24)
                         
                     }
@@ -41,7 +45,15 @@ struct ContentView: View {
             }.padding( .top, 45))
 
         }.frame(width: .infinity, height: .infinity)
-        
+        .onAppear() {
+            service.getCovidCase { result in
+                switch result {
+                case .success(let stats):
+                    self.data = CovidEntry(date: Date(), covidData: stats)
+                case .failure(let error): break
+                }
+            }
+        }
     }
 }
 

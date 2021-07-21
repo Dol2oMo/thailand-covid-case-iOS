@@ -69,8 +69,8 @@ struct CovidWidget: Widget {
         StaticConfiguration(kind: kind, provider: CovidTotalStatsTimelineProvider(), content: { entry in
             CovidWidgetEntryView(entry: entry)
         })
-        .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
+        .configurationDisplayName("กี่คนแล้ว")
+        .description("ทำขึ้นมาเพื่อให้คนไทยได้สามารถเข้าถึงตัวเลขยอดติดเชื้อโควิดของประเทศไทยได้ง่ายๆ")
     }
 }
 

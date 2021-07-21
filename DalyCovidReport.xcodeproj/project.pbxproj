@@ -24,7 +24,6 @@
 		B4E00D1826A73B0300814B89 /* CovidWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = B4E00D1326A73B0200814B89 /* CovidWidget.intentdefinition */; };
 		B4E00D1B26A73B0300814B89 /* CovidWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B4E00D0A26A73B0200814B89 /* CovidWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B4E00D2026A73B4700814B89 /* ReportViewMedium.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E00CC826A7310300814B89 /* ReportViewMedium.swift */; };
-		B4E00D2126A73B5100814B89 /* ReportViewMedium.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E00CC826A7310300814B89 /* ReportViewMedium.swift */; };
 		B4E00D2226A73B5600814B89 /* DefaultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E00CC426A7238500814B89 /* DefaultData.swift */; };
 		B4E00D2326A73B5F00814B89 /* ImageLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E00CC626A72C4000814B89 /* ImageLogoView.swift */; };
 		B4E00D2426A73B6200814B89 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E00CC126A71E3800814B89 /* TitleView.swift */; };
@@ -33,10 +32,8 @@
 		B4E00D2926A73D7A00814B89 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B4E00D2726A73D7A00814B89 /* Rubik-Regular.ttf */; };
 		B4E00D2B26A73E8C00814B89 /* Mitr-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B4E00D2A26A73E8C00814B89 /* Mitr-Regular.ttf */; };
 		B4E00D2C26A73E8C00814B89 /* Mitr-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B4E00D2A26A73E8C00814B89 /* Mitr-Regular.ttf */; };
-		B4E00D2E26A7B7E500814B89 /* ReportViewSmall.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E00D2D26A7B7E500814B89 /* ReportViewSmall.swift */; };
 		B4E00D2F26A7B7E500814B89 /* ReportViewSmall.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E00D2D26A7B7E500814B89 /* ReportViewSmall.swift */; };
 		B4E00D3126A7B96F00814B89 /* ValueCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E00D3026A7B96F00814B89 /* ValueCase.swift */; };
-		B4E00D3226A7B96F00814B89 /* ValueCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E00D3026A7B96F00814B89 /* ValueCase.swift */; };
 		B4E00D3526A7BAD700814B89 /* IntegerNumberExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E00D3426A7BAD700814B89 /* IntegerNumberExtension.swift */; };
 		B4E00D3626A7BAD700814B89 /* IntegerNumberExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E00D3426A7BAD700814B89 /* IntegerNumberExtension.swift */; };
 		B4E00D3826A7BC3600814B89 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E00D3726A7BC3600814B89 /* ColorExtension.swift */; };
@@ -49,6 +46,10 @@
 		B4E00D4726A840DB00814B89 /* CovidModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E00D4526A840DB00814B89 /* CovidModel.swift */; };
 		B4E00D4A26A8439300814B89 /* CovidTotalStatsTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E00D4826A8439300814B89 /* CovidTotalStatsTimelineProvider.swift */; };
 		B4E00D4B26A857CF00814B89 /* CovidTotalStatsTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E00D4826A8439300814B89 /* CovidTotalStatsTimelineProvider.swift */; };
+		B4E00D4D26A878C900814B89 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E00D4C26A878C900814B89 /* DateExtension.swift */; };
+		B4E00D4E26A878C900814B89 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E00D4C26A878C900814B89 /* DateExtension.swift */; };
+		B4E00D5126A87F4A00814B89 /* DailyReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E00D5026A87F4A00814B89 /* DailyReportView.swift */; };
+		B4E00D5326A87F5E00814B89 /* ValueCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E00D3026A7B96F00814B89 /* ValueCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +124,8 @@
 		B4E00D4126A83F6700814B89 /* CovidService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidService.swift; sourceTree = "<group>"; };
 		B4E00D4526A840DB00814B89 /* CovidModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidModel.swift; sourceTree = "<group>"; };
 		B4E00D4826A8439300814B89 /* CovidTotalStatsTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidTotalStatsTimelineProvider.swift; sourceTree = "<group>"; };
+		B4E00D4C26A878C900814B89 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		B4E00D5026A87F4A00814B89 /* DailyReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,8 +234,6 @@
 			children = (
 				B4E00CC126A71E3800814B89 /* TitleView.swift */,
 				B4E00CC626A72C4000814B89 /* ImageLogoView.swift */,
-				B4E00CC826A7310300814B89 /* ReportViewMedium.swift */,
-				B4E00D2D26A7B7E500814B89 /* ReportViewSmall.swift */,
 				B4E00D3026A7B96F00814B89 /* ValueCase.swift */,
 			);
 			path = WidgetView;
@@ -259,6 +260,7 @@
 		B4E00D1026A73B0200814B89 /* CovidWidget */ = {
 			isa = PBXGroup;
 			children = (
+				B4E00D4F26A87E9500814B89 /* UIWidget */,
 				B4E00D1126A73B0200814B89 /* CovidWidget.swift */,
 				B4E00D1326A73B0200814B89 /* CovidWidget.intentdefinition */,
 				B4E00D1426A73B0300814B89 /* Assets.xcassets */,
@@ -282,6 +284,7 @@
 			children = (
 				B4E00D3426A7BAD700814B89 /* IntegerNumberExtension.swift */,
 				B4E00D3726A7BC3600814B89 /* ColorExtension.swift */,
+				B4E00D4C26A878C900814B89 /* DateExtension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				B4E00D3E26A835DF00814B89 /* OtherDataView.swift */,
+				B4E00D5026A87F4A00814B89 /* DailyReportView.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -300,6 +304,15 @@
 				B4E00D4526A840DB00814B89 /* CovidModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B4E00D4F26A87E9500814B89 /* UIWidget */ = {
+			isa = PBXGroup;
+			children = (
+				B4E00CC826A7310300814B89 /* ReportViewMedium.swift */,
+				B4E00D2D26A7B7E500814B89 /* ReportViewSmall.swift */,
+			);
+			path = UIWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -467,15 +480,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4E00D2E26A7B7E500814B89 /* ReportViewSmall.swift in Sources */,
 				B4E00D3F26A835DF00814B89 /* OtherDataView.swift in Sources */,
 				B4E00D3126A7B96F00814B89 /* ValueCase.swift in Sources */,
 				B4955F8626A6FBB4003D4EBD /* ContentView.swift in Sources */,
 				B4955F8426A6FBB4003D4EBD /* DalyCovidReportApp.swift in Sources */,
+				B4E00D5126A87F4A00814B89 /* DailyReportView.swift in Sources */,
 				B4E00D4226A83F6700814B89 /* CovidService.swift in Sources */,
 				B4E00D1826A73B0300814B89 /* CovidWidget.intentdefinition in Sources */,
 				B4E00CC226A71E3800814B89 /* TitleView.swift in Sources */,
-				B4E00D2126A73B5100814B89 /* ReportViewMedium.swift in Sources */,
+				B4E00D4D26A878C900814B89 /* DateExtension.swift in Sources */,
 				B4E00D4626A840DB00814B89 /* CovidModel.swift in Sources */,
 				B4E00D4B26A857CF00814B89 /* CovidTotalStatsTimelineProvider.swift in Sources */,
 				B4E00CC726A72C4000814B89 /* ImageLogoView.swift in Sources */,
@@ -506,12 +519,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4E00D2F26A7B7E500814B89 /* ReportViewSmall.swift in Sources */,
+				B4E00D4E26A878C900814B89 /* DateExtension.swift in Sources */,
 				B4E00D4726A840DB00814B89 /* CovidModel.swift in Sources */,
+				B4E00D5326A87F5E00814B89 /* ValueCase.swift in Sources */,
 				B4E00D1726A73B0300814B89 /* CovidWidget.intentdefinition in Sources */,
 				B4E00D3626A7BAD700814B89 /* IntegerNumberExtension.swift in Sources */,
 				B4E00D4326A83F6700814B89 /* CovidService.swift in Sources */,
 				B4E00D1226A73B0200814B89 /* CovidWidget.swift in Sources */,
-				B4E00D3226A7B96F00814B89 /* ValueCase.swift in Sources */,
 				B4E00D2026A73B4700814B89 /* ReportViewMedium.swift in Sources */,
 				B4E00D4026A835DF00814B89 /* OtherDataView.swift in Sources */,
 				B4E00D2326A73B5F00814B89 /* ImageLogoView.swift in Sources */,
@@ -665,6 +679,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"DalyCovidReport/Preview Content\"";
 				DEVELOPMENT_TEAM = 767STBTQBB;
@@ -675,8 +690,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Dol2oMo.DalyCovidReport;
+				PRODUCT_BUNDLE_IDENTIFIER = com.volevi.DalyCovidReport;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -688,6 +704,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"DalyCovidReport/Preview Content\"";
 				DEVELOPMENT_TEAM = 767STBTQBB;
@@ -698,8 +715,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Dol2oMo.DalyCovidReport;
+				PRODUCT_BUNDLE_IDENTIFIER = com.volevi.DalyCovidReport;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -802,7 +820,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Dol2oMo.DalyCovidReport.CovidWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.volevi.DalyCovidReport.CovidWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -823,7 +841,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Dol2oMo.DalyCovidReport.CovidWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.volevi.DalyCovidReport.CovidWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;

@@ -1,20 +1,31 @@
 //
-//  ReportView.swift
+//  DailyReportView.swift
 //  DalyCovidReport
 //
-//  Created by Sorasak Tungpraisansombut on 20/7/2564 BE.
+//  Created by Sorasak Tungpraisansombut on 21/7/2564 BE.
 //
 
 import SwiftUI
-import WidgetKit
 
-struct ReportViewMedium: View {
+//struct DailyReportView: View {
+//    var body: some View {
+//        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+//    }
+//}
+//
+//struct DailyReportView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        DailyReportView()
+//    }
+//}
+
+struct DailyReportView: View {
 
     var data: CovidEntry
 
     var body: some View {
         VStack(spacing: 2) {
-            HStack {
+            HStack(alignment: .top) {
                 VStack(alignment: .leading, spacing: 2){
 
                     TitleView(DefaultTitle.newCase)
@@ -25,6 +36,13 @@ struct ReportViewMedium: View {
                         .padding(.leading, 33)
                 }
                 Spacer()
+                VStack(alignment: .leading, spacing: 2){
+                    Text(Date().convertFullDateToDayAndMonth(predicate: data.covidData.updateDate))
+                    .font(.custom("Mitr-Regular", size: 14))
+                    .minimumScaleFactor(0.7)
+                    .foregroundColor(Color.grayText)
+                    .lineLimit(nil)
+                }
             }
 
             Spacer()
@@ -44,8 +62,8 @@ struct ReportViewMedium: View {
 
                 VStack(alignment: .leading, spacing: 2){
 
-                    TitleView(DefaultTitle.admitCase)
-                    ValueCase(data.covidData.hospitalized,
+                    TitleView(DefaultTitle.newCaseAdmit)
+                    ValueCase(data.covidData.newHospitalized,
                               fontSize: 32)
                         .foregroundColor(Color.orangeText)
                         .minimumScaleFactor(0.5)
@@ -56,13 +74,9 @@ struct ReportViewMedium: View {
     }
 }
 
-struct ReportView_Previews: PreviewProvider {
+struct DailyReportView_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            ReportViewMedium(data: CovidEntry.placeholder)
-                .previewContext(WidgetPreviewContext(family: .systemMedium))
-//                .previewLayout(.fixed(width: 200, height: 200))
-//                .previewContext(WidgetPreviewContext(family: .systemSmall))
-        }
+        DailyReportView(data: CovidEntry.placeholder)
+            .previewLayout(.sizeThatFits)
     }
 }

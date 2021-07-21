@@ -38,17 +38,13 @@ struct TitleView_Previews: PreviewProvider {
 
 struct FooterView: View {
 
-    var data: DefaultTitle
-
-    init(_ data: DefaultTitle) {
-        self.data = data
-    }
+    var data: CovidEntry
 
     var body: some View {
         HStack {
             VStack(alignment: .center, spacing: 8) {
-                Text("ข้อมูลจาก .........").font(.custom("Mitr-Regular", size: 14)).foregroundColor(Color.grayText)
-                Text("อัพเดตล่าสุดเมื่อ 14:58 19/07/2021").font(.custom("Mitr-Regular", size: 14)).foregroundColor(Color.grayText)
+                Text("ข้อมูลจาก \(data.covidData.devBy)").font(.custom("Mitr-Regular", size: 14)).foregroundColor(Color.grayText)
+                Text("อัพเดตล่าสุดเมื่อ \(data.covidData.updateDate)").font(.custom("Mitr-Regular", size: 14)).foregroundColor(Color.grayText)
             }
         }
     }
@@ -56,7 +52,8 @@ struct FooterView: View {
 
 struct FooterView_Previews: PreviewProvider {
     static var previews: some View {
-        FooterView(DefaultTitle.newCase).previewLayout(.sizeThatFits)
+        FooterView(data: CovidEntry.placeholder)
+            .previewLayout(.sizeThatFits)
     }
 }
 

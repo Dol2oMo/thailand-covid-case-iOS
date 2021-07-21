@@ -26,25 +26,25 @@ struct OtherDataView: View {
             HStack {
                 VStack(alignment: .leading, spacing: 2){
 
-                    TitleView(DefaultTitle.dailyDie).padding(.bottom,8)
-                    ValueCase(data.covidData.todayDeaths, fontSize: 32).foregroundColor(Color.black).minimumScaleFactor(0.5).padding(.leading, 33)
+                    TitleView(DefaultTitle.admitCase).padding(.bottom,8)
+                    ValueCase(data.covidData.newHospitalized, fontSize: 32).foregroundColor(Color.black).minimumScaleFactor(0.5).padding(.leading, 33)
                 }
+
                 Spacer()
             }.padding(.bottom, 22)
 
             HStack {
                 VStack(alignment: .leading, spacing: 2){
 
-                    TitleView(DefaultTitle.admitCase).padding(.bottom,8)
-                    ValueCase(data.covidData.recovered, fontSize: 32).foregroundColor(Color.black).minimumScaleFactor(0.5).padding(.leading, 33)
+                    TitleView(DefaultTitle.die).padding(.bottom,8)
+                    ValueCase(data.covidData.deaths, fontSize: 32).foregroundColor(Color.black).minimumScaleFactor(0.5).padding(.leading, 33)
                 }
-
                 Spacer()
             }
 
             Spacer()
 
-            FooterView(DefaultTitle.newCase)
+            FooterView(data: data)
 
         }.padding(17)
     }

@@ -6,6 +6,7 @@
 //
 
 import XCTest
+
 @testable import DalyCovidReport
 
 class DalyCovidReportTests: XCTestCase {
