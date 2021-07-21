@@ -16,6 +16,7 @@ struct CovidModel: Decodable {
     var deaths: Int = 0
     var todayDeaths: Int = 0
     var newHospitalized: Int = 0
+    var hospitalized: Int = 0
     var newDeaths: Int = 0
     var updateDate: String = ""
     var devBy: String = ""
@@ -28,7 +29,8 @@ struct CovidModel: Decodable {
              deaths,
              todayDeaths,
              newHospitalized = "NewHospitalized",
-             newDeaths = "NewDeaths"
+             newDeaths = "NewDeaths",
+             hospitalized = "Hospitalized"
         case updateDate = "UpdateDate"
         case devBy = "DevBy"
     }

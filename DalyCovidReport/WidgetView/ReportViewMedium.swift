@@ -45,7 +45,7 @@ struct ReportViewMedium: View {
                 VStack(alignment: .leading, spacing: 2){
 
                     TitleView(DefaultTitle.admitCase)
-                    ValueCase(data.covidData.recovered,
+                    ValueCase(data.covidData.hospitalized,
                               fontSize: 32)
                         .foregroundColor(Color.orangeText)
                         .minimumScaleFactor(0.5)
