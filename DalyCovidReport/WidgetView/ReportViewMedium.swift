@@ -8,21 +8,17 @@
 import SwiftUI
 import WidgetKit
 
-struct ReportView: View {
+struct ReportViewMedium: View {
 
-    var data: DefaultTitle
+    var data: CovidEntry
 
-    init(_ data: DefaultTitle?) {
-        self.data = data ?? DefaultTitle.dailyDie
-    }
-    
     var body: some View {
         VStack(spacing: 2) {
             HStack {
                 VStack(alignment: .leading, spacing: 2){
 
                     TitleView(DefaultTitle.newCase)
-                    ValueCase(DefaultTitle.newCase,
+                    ValueCase(data.covidData.todayCases,
                               fontSize: 48)
                         .foregroundColor(Color.redText)
                         .minimumScaleFactor(0.5)
@@ -37,7 +33,7 @@ struct ReportView: View {
                 VStack(alignment: .leading, spacing: 2){
 
                     TitleView(DefaultTitle.dailyDie)
-                    ValueCase(DefaultTitle.dailyDie,
+                    ValueCase(data.covidData.todayDeaths,
                               fontSize: 32)
                         .foregroundColor(Color.violetText)
                         .minimumScaleFactor(0.5)
@@ -49,7 +45,7 @@ struct ReportView: View {
                 VStack(alignment: .leading, spacing: 2){
 
                     TitleView(DefaultTitle.admitCase)
-                    ValueCase(DefaultTitle.admitCase,
+                    ValueCase(data.covidData.recovered,
                               fontSize: 32)
                         .foregroundColor(Color.orangeText)
                         .minimumScaleFactor(0.5)
@@ -63,7 +59,8 @@ struct ReportView: View {
 struct ReportView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ReportView(DefaultTitle.newCase).previewContext(WidgetPreviewContext(family: .systemMedium))
+            ReportViewMedium(data: CovidEntry.placeholder)
+                .previewContext(WidgetPreviewContext(family: .systemMedium))
 //                .previewLayout(.fixed(width: 200, height: 200))
 //                .previewContext(WidgetPreviewContext(family: .systemSmall))
         }

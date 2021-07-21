@@ -9,22 +9,22 @@ import SwiftUI
 
 struct ValueCase: View {
 
-    var data: DefaultTitle
+    var data: Int
     var fontSize: CGFloat = 32
 
-    init(_ data: DefaultTitle,
+    init(_ data: Int,
          fontSize: CGFloat = 32) {
         self.data = data
         self.fontSize = fontSize
     }
     
     var body: some View {
-        Text("\(data.value.converToDecimal())").font(.custom("Rubik-Regular", size: fontSize))
+        Text("\(data.converToDecimal())").font(.custom("Rubik-Regular", size: fontSize))
     }
 }
 
 struct ValueCase_Previews: PreviewProvider {
     static var previews: some View {
-        ValueCase(DefaultTitle.newCase)
+        ValueCase(0)
     }
 }

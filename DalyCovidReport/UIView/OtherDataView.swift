@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct OtherDataView: View {
+    
+    var data: CovidEntry
+    
     var body: some View {
         VStack(spacing: 2) {
 
@@ -15,7 +18,7 @@ struct OtherDataView: View {
                 VStack(alignment: .leading, spacing: 2){
 
                     TitleView(DefaultTitle.summeryCase).padding(.bottom,8)
-                    ValueCase(DefaultTitle.newCase, fontSize: 32).foregroundColor(Color.black).minimumScaleFactor(0.7).padding(.leading, 33)
+                    ValueCase(data.covidData.cases, fontSize: 32).foregroundColor(Color.black).minimumScaleFactor(0.7).padding(.leading, 33)
                 }
                 Spacer()
             }.padding(.bottom, 22)
@@ -24,7 +27,7 @@ struct OtherDataView: View {
                 VStack(alignment: .leading, spacing: 2){
 
                     TitleView(DefaultTitle.dailyDie).padding(.bottom,8)
-                    ValueCase(DefaultTitle.dailyDie, fontSize: 32).foregroundColor(Color.black).minimumScaleFactor(0.5).padding(.leading, 33)
+                    ValueCase(data.covidData.todayDeaths, fontSize: 32).foregroundColor(Color.black).minimumScaleFactor(0.5).padding(.leading, 33)
                 }
                 Spacer()
             }.padding(.bottom, 22)
@@ -33,7 +36,7 @@ struct OtherDataView: View {
                 VStack(alignment: .leading, spacing: 2){
 
                     TitleView(DefaultTitle.admitCase).padding(.bottom,8)
-                    ValueCase(DefaultTitle.admitCase, fontSize: 32).foregroundColor(Color.black).minimumScaleFactor(0.5).padding(.leading, 33)
+                    ValueCase(data.covidData.recovered, fontSize: 32).foregroundColor(Color.black).minimumScaleFactor(0.5).padding(.leading, 33)
                 }
 
                 Spacer()
@@ -49,6 +52,6 @@ struct OtherDataView: View {
 
 struct OtherDataView_Previews: PreviewProvider {
     static var previews: some View {
-        OtherDataView().previewLayout(.sizeThatFits)
+        OtherDataView(data: CovidEntry.placeholder).previewLayout(.sizeThatFits)
     }
 }

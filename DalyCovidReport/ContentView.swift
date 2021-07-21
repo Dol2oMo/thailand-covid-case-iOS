@@ -17,7 +17,7 @@ struct ContentView: View {
 
                 ZStack {
                     Color.white.overlay(
-                        ReportView(nil)
+                        ReportViewMedium(data: CovidEntry.placeholder)
                     ).cornerRadius(24)
                 }
                 .padding([.leading,.trailing],25)
@@ -29,7 +29,7 @@ struct ContentView: View {
                 HStack {
                     VStack {
                         Color.white.overlay(
-                            OtherDataView()
+                            OtherDataView(data: CovidEntry.placeholder)
                         ).cornerRadius(24)
                         
                     }

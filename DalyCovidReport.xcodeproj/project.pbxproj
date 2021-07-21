@@ -48,6 +48,7 @@
 		B4E00D4626A840DB00814B89 /* CovidModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E00D4526A840DB00814B89 /* CovidModel.swift */; };
 		B4E00D4726A840DB00814B89 /* CovidModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E00D4526A840DB00814B89 /* CovidModel.swift */; };
 		B4E00D4A26A8439300814B89 /* CovidTotalStatsTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E00D4826A8439300814B89 /* CovidTotalStatsTimelineProvider.swift */; };
+		B4E00D4B26A857CF00814B89 /* CovidTotalStatsTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E00D4826A8439300814B89 /* CovidTotalStatsTimelineProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -476,6 +477,7 @@
 				B4E00CC226A71E3800814B89 /* TitleView.swift in Sources */,
 				B4E00D2126A73B5100814B89 /* ReportViewMedium.swift in Sources */,
 				B4E00D4626A840DB00814B89 /* CovidModel.swift in Sources */,
+				B4E00D4B26A857CF00814B89 /* CovidTotalStatsTimelineProvider.swift in Sources */,
 				B4E00CC726A72C4000814B89 /* ImageLogoView.swift in Sources */,
 				B4E00CC526A7238500814B89 /* DefaultData.swift in Sources */,
 				B4E00D3826A7BC3600814B89 /* ColorExtension.swift in Sources */,

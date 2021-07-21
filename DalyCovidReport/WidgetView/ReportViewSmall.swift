@@ -9,12 +9,15 @@ import SwiftUI
 import WidgetKit
 
 struct ReportViewSmall: View {
+
+    var data: CovidEntry
+
     var body: some View {
         VStack(alignment: .leading, spacing:2) {
             HStack {
                 VStack {
                     TitleView(DefaultTitle.newCase)
-                    ValueCase(DefaultTitle.newCase, fontSize: 48).foregroundColor(Color.redText).minimumScaleFactor(0.7)
+                    ValueCase(data.covidData.todayCases, fontSize: 48).foregroundColor(Color.redText).minimumScaleFactor(0.7)
                 }
             }
         }.padding(17)
@@ -23,6 +26,6 @@ struct ReportViewSmall: View {
 
 struct ReportViewSmall_Previews: PreviewProvider {
     static var previews: some View {
-        ReportViewSmall().previewContext(WidgetPreviewContext(family: .systemSmall))
+        ReportViewSmall(data: CovidEntry.placeholder).previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }

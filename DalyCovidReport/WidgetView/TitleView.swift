@@ -16,14 +16,18 @@ struct TitleView: View {
     }
     
     var body: some View {
-        HStack{
-            HStack(alignment: .center,
-                   spacing: 11) {
-                ImageLogoView(data)
-                Text(data.title).font(.custom("Mitr-Regular", size: 16)).foregroundColor(Color.grayText)
+            HStack{
+                HStack(alignment: .center,
+                       spacing: 11) {
+                    ImageLogoView(data)
+                    Text(data.title)
+                        .font(.custom("Mitr-Regular", size: 14))
+                        .minimumScaleFactor(0.7)
+                        .foregroundColor(Color.grayText)
+                        .lineLimit(nil)
+                }
             }
         }
-    }
 }
 
 struct TitleView_Previews: PreviewProvider {
