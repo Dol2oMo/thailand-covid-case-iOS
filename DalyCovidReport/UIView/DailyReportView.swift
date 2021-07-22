@@ -68,7 +68,7 @@ struct DailyReportView: View {
                         .foregroundColor(Color.orangeText)
                         .minimumScaleFactor(0.5)
                         .padding(.leading, 33)
-                }
+                }.padding(.trailing, 18)
             }
         }.padding(17)
     }

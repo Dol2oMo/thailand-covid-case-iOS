@@ -50,6 +50,8 @@
 		B4E00D4E26A878C900814B89 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E00D4C26A878C900814B89 /* DateExtension.swift */; };
 		B4E00D5126A87F4A00814B89 /* DailyReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E00D5026A87F4A00814B89 /* DailyReportView.swift */; };
 		B4E00D5326A87F5E00814B89 /* ValueCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E00D3026A7B96F00814B89 /* ValueCase.swift */; };
+		B4E00D5526A9193A00814B89 /* CovidEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E00D5426A9193A00814B89 /* CovidEntry.swift */; };
+		B4E00D5626A9193A00814B89 /* CovidEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E00D5426A9193A00814B89 /* CovidEntry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +128,7 @@
 		B4E00D4826A8439300814B89 /* CovidTotalStatsTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidTotalStatsTimelineProvider.swift; sourceTree = "<group>"; };
 		B4E00D4C26A878C900814B89 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		B4E00D5026A87F4A00814B89 /* DailyReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportView.swift; sourceTree = "<group>"; };
+		B4E00D5426A9193A00814B89 /* CovidEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidEntry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,7 +195,7 @@
 				B4E00D3326A7BAB900814B89 /* Utils */,
 				B4E00D2626A73D5100814B89 /* font */,
 				B4E00CC326A71E8E00814B89 /* Repository */,
-				B4E00CC026A71D9000814B89 /* WidgetView */,
+				B4E00CC026A71D9000814B89 /* ShareView */,
 				B4E00D3D26A8359A00814B89 /* UIView */,
 				B4955F8326A6FBB4003D4EBD /* DalyCovidReportApp.swift */,
 				B4955F8526A6FBB4003D4EBD /* ContentView.swift */,
@@ -229,14 +232,14 @@
 			path = DalyCovidReportUITests;
 			sourceTree = "<group>";
 		};
-		B4E00CC026A71D9000814B89 /* WidgetView */ = {
+		B4E00CC026A71D9000814B89 /* ShareView */ = {
 			isa = PBXGroup;
 			children = (
 				B4E00CC126A71E3800814B89 /* TitleView.swift */,
 				B4E00CC626A72C4000814B89 /* ImageLogoView.swift */,
 				B4E00D3026A7B96F00814B89 /* ValueCase.swift */,
 			);
-			path = WidgetView;
+			path = ShareView;
 			sourceTree = "<group>";
 		};
 		B4E00CC326A71E8E00814B89 /* Repository */ = {
@@ -302,6 +305,7 @@
 			isa = PBXGroup;
 			children = (
 				B4E00D4526A840DB00814B89 /* CovidModel.swift */,
+				B4E00D5426A9193A00814B89 /* CovidEntry.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -482,6 +486,7 @@
 			files = (
 				B4E00D3F26A835DF00814B89 /* OtherDataView.swift in Sources */,
 				B4E00D3126A7B96F00814B89 /* ValueCase.swift in Sources */,
+				B4E00D5526A9193A00814B89 /* CovidEntry.swift in Sources */,
 				B4955F8626A6FBB4003D4EBD /* ContentView.swift in Sources */,
 				B4955F8426A6FBB4003D4EBD /* DalyCovidReportApp.swift in Sources */,
 				B4E00D5126A87F4A00814B89 /* DailyReportView.swift in Sources */,
@@ -520,6 +525,7 @@
 			files = (
 				B4E00D2F26A7B7E500814B89 /* ReportViewSmall.swift in Sources */,
 				B4E00D4E26A878C900814B89 /* DateExtension.swift in Sources */,
+				B4E00D5626A9193A00814B89 /* CovidEntry.swift in Sources */,
 				B4E00D4726A840DB00814B89 /* CovidModel.swift in Sources */,
 				B4E00D5326A87F5E00814B89 /* ValueCase.swift in Sources */,
 				B4E00D1726A73B0300814B89 /* CovidWidget.intentdefinition in Sources */,

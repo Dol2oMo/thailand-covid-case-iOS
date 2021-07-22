@@ -13,14 +13,18 @@ struct ReportViewSmall: View {
     var data: CovidEntry
 
     var body: some View {
-        VStack(alignment: .leading, spacing:2) {
-            HStack {
-                VStack {
-                    TitleView(DefaultTitle.newCase)
-                    ValueCase(data.covidData.todayCases, fontSize: 48).foregroundColor(Color.redText).minimumScaleFactor(0.7)
+        Color.white.overlay(
+            VStack(alignment: .leading, spacing:2) {
+                HStack {
+                    VStack {
+                        TitleView(DefaultTitle.newCase)
+                        ValueCase(data.covidData.todayCases, fontSize: 48)
+                            .foregroundColor(Color.redText)
+                            .minimumScaleFactor(0.7)
+                    }
                 }
-            }
-        }.padding(17)
+            }.padding(17)
+        )
     }
 }
 
